@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="css/main.css" type="text/css" charset="utf-8">
+</head>
+<body>
+  <div class="container">
+    <p>
+      <label for="new-item">Add Item</label><input id="new-item" type="text"><button>Add</button>
+    </p>
+    <h3>Todo</h3>
+    <ul id="incomplete-items">
+      <li>
+        <input type="checkbox"><label></label><input type="text"><button class="edit">Edit
+        </button><button class="delete">Delete</button>
+      </li>
+      <li class="editMode">
+        <input type="checkbox"><label></label><input type="text">
+        <button class="edit">Edit</button><button class="delete">Delete</button>
+      </li>
+    </ul>
+    <h3>Completed</h3>
+    <ul id="completed-items">
+      <li>
+        <input type="checkbox" checked><label></label><input type="text"><button class="edit">
+        Edit</button><button class="delete">Delete</button>
+      </li>
+    </ul>
+  </div>
+
+ <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+  background: #fafafa;
+  color: black;
+  font-family: arial;
+}
+
+.container {
+  display: block;
+  width: 35%;
+  margin: 100px auto 0;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+li *{
+  float: left;
+}
+
+li, h3{
+  clear:both;
+  list-style: none;
+}
+
+button{
+  border: 0;
+  padding: 10px 15px 10px 15px;
+  font-weight: 400;
+  color: white;
+  background-color: #00B16A;
+  line-height: 1.0;
+  border-bottom: 3px solid #1e824c;
+  font-family: arial;
+  cursor: pointer;
+}
+
+h3,
+label[for='new-item'] {
+  color: black;
+  font-weight: 600;
+  font-size: 1.3em;
+  border-bottom: 2px solid black;
+  padding: 30px 0 10px;
+  margin: 0;
+}
+
+input[type="text"] {
+  margin: 0;
+  font-size: 1.6em;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: arial;
+  color: #888;
+}

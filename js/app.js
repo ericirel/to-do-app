@@ -43,18 +43,18 @@ var addItem = function() {
 var editItem = function() {
   console.log("Edit item...")
 
-  var listItem = this.parentNode;
+  var listItems = this.parentNode;
 
-  var editInput = listItem.querySelector("input[type=text");
-  var label = listItem.querySelector("label");
-  var containsClass = listItem.classList.contains("editMode");
+  var editInput = listItems.querySelector("input[type=text]");
+  var label = listItems.querySelector("label");
+  var containsClass = listItems.classList.contains("editMode");
 
   if(containsClass) {
     label.innerText = editInput.value;
   } else {
     editInput.value = label.innerText;
   }
-  listItem.classList.toggle("editMode");
+  listItems.classList.toggle("editMode");
 }
 
   var deleteItem = function() {

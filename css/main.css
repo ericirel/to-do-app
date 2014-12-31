@@ -1,12 +1,12 @@
 body {
   background: #fafafa;
   color: black;
-  font-family: arial;
+  font-family: 'Source Sans Pro', arial;
 }
 
 .container {
   display: block;
-  width: 35%;
+  width: 45%;
   margin: 100px auto 0;
 }
 
@@ -26,14 +26,17 @@ li, h3{
 
 button{
   border: 0;
-  padding: 10px 15px 10px 15px;
-  font-weight: 400;
+  padding: 8px 13px 8px 13px;
+  font-weight: 600;
   color: white;
   background-color: #00B16A;
-  line-height: 1.0;
+  line-height: 1.5;
   border-bottom: 3px solid #1e824c;
-  font-family: arial;
+  font-family: 'Source Sans Pro', arial;
   cursor: pointer;
+  margin-bottom: 4px;
+  margin-left: 8px;
+
 }
 
 h3,
@@ -57,4 +60,62 @@ input[type="text"] {
   border-radius: 6px;
   font-family: arial;
   color: #888;
+}
+
+input[type="text"]:focus {
+  color: #444;
+}
+
+label[for='new-item'] {
+  display: block;
+  margin: 0 0 20px;
+}
+
+input#new-item {
+  float: left;
+  width: 318px;
+}
+
+button:hover {
+  border-bottom: 3px solid #009059;
+  background-color: #009059;
+}
+
+li{
+  overflow: : hidden;
+  padding: 20px 0;
+}
+
+li > input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+}
+
+li > label {
+  font-size: 1.6em;
+  line-height: 40px;
+  width: 237px;
+  padding: 0 0 0 11px;
+}
+
+li > input[type="text"] {
+  width: 226px;
+}
+
+li > .delete:hover {
+  color: #D24D57;
+}
+
+#completed-tasks label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+ul li.editMode input[type=text] {
+  display:block;
+}
+
+ul li.editMode label {
+  display: none;
 }

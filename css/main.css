@@ -1,5 +1,5 @@
 body {
-  background: #fafafa;
+  background: #D2D7D3;
   color: black;
   font-family: 'Source Sans Pro', arial;
 }
@@ -7,7 +7,24 @@ body {
 .container {
   display: block;
   width: 45%;
-  margin: 100px auto 0;
+  margin: -20px auto 0;
+  margin-right: 180px;
+  margin-top: -220px;
+}
+
+#instructions {
+  font-family: Trebuchet MS;
+  background-color: #00B16A;
+  border-left: solid 5px #1e824c;
+  border-bottom: solid 5px #1e824c;
+  border-radius: 4px;
+  width: 26%;
+  margin-right: 50px;
+}
+
+#slash-slash {
+  color: #F7CA18;
+  font-weight: 600;
 }
 
 ul{
@@ -36,7 +53,6 @@ button{
   cursor: pointer;
   margin-bottom: 4px;
   margin-left: 8px;
-
 }
 
 h3,
@@ -107,7 +123,7 @@ li > .delete:hover {
   color: #D24D57;
 }
 
-#completed-tasks label {
+#completed-items label {
   text-decoration: line-through;
   color: #888;
 }

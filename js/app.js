@@ -31,7 +31,6 @@ var createNewItemElement = function(itemString) {
 }
 
 var addItem = function() {
-  console.log("Add item...")
 
   var listItem = createNewItemElement(itemInput.value);
   incompleteItemsHolder.appendChild(listItem);
@@ -41,7 +40,6 @@ var addItem = function() {
 }
 
 var editItem = function() {
-  console.log("Edit item...")
 
   var listItems = this.parentNode;
 
@@ -58,7 +56,7 @@ var editItem = function() {
 }
 
   var deleteItem = function() {
-    console.log("Delete task...")
+
     var listItem = this.parentNode;
     var ul = listItem.parentNode;
 
@@ -66,21 +64,21 @@ var editItem = function() {
   }
 
 var itemCompleted = function() {
-  console.log("Task complete...")
+
   var listItem = this.parentNode;
   completedItemsHolder.appendChild(listItem);
   bindItemEvents(listItem, itemIncomplete)
 }
 
 var itemIncomplete = function() {
-  console.log("Task incomplete...")
+
   var listItem = this.parentNode;
   incompleteItemsHolder.appendChild(listItem);
   bindItemEvents(listItem, itemCompleted);
 }
 
 var bindItemEvents = function(itemListItem, checkBoxEventHandler) {
-  console.log("Bind list items...")
+
   var checkBox = itemListItem.querySelector("input[type=checkbox]");
   var editButton = itemListItem.querySelector("button.edit");
   var deleteButton = itemListItem.querySelector("button.delete");

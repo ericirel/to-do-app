@@ -6,20 +6,24 @@ body {
 
 .container {
   display: block;
-  width: 45%;
+  width: 50%;
   margin: -20px auto 0;
-  margin-right: 180px;
+  margin-right: 0 auto;
   margin-top: -220px;
 }
 
-#instructions {
+.instructions {
   font-family: Trebuchet MS;
   background-color: #00B16A;
-  border-left: solid 5px #1e824c;
-  border-bottom: solid 5px #1e824c;
+  border: solid 3px #1e824c;
   border-radius: 4px;
-  width: 26%;
-  margin-right: 50px;
+  width: 65%;
+  margin: 0 auto;
+  margin-bottom: 210px;
+}
+
+#icon i {
+ float: right;
 }
 
 #slash-slash {
@@ -138,4 +142,10 @@ ul li.editMode input[type=text] {
 
 ul li.editMode label {
   display: none;
+}
+
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 20px solid #00B16A;
 }

@@ -103,3 +103,4 @@ for(var i = 0; i < incompleteItemsHolder.children.length; i++) {
 for(var i = 0; i < completedItemsHolder.children.length; i++) {
   bindItemEvents(completedItemsHolder.children[i], itemIncomplete);
 }
+

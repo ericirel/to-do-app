@@ -5,13 +5,19 @@
   <title>Todo App</title>
   <link rel="stylesheet" href="css/main.css" type="text/css" charset="utf-8">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
-  <ol id="instructions">
-    <li><span id="slash-slash">&mdash;</span>&nbsp; Add Reminders/To Dos.</li>
-    <li><span id="slash-slash">&mdash;</span>&nbsp; Edit or delete your To Dos anytime.</li>
-    <li><span id="slash-slash">&mdash;</span>&nbsp; Mark as complete by clicking &nbsp;&nbsp;&nbsp;&nbsp;checkbox.</li>
-  </ol>
+  <div class="instructions">
+    <div id="icon">
+      <i class="fa fa-pencil-square-o fa-5x"></i>
+    </div>
+    <ol>
+      <li><span id="slash-slash">&mdash;</span>&nbsp; Add Reminders/To Dos.</li>
+      <li><span id="slash-slash">&mdash;</span>&nbsp; Edit or delete your To Dos anytime.</li>
+      <li><span id="slash-slash">&mdash;</span>&nbsp; Mark as complete by clicking checkbox.</li>
+    </ol>
+  </div>
  <!--  <h2>Your Todo List</h2> -->
   <div class="container">
     <p>
@@ -36,7 +42,9 @@
       </li>
     </ul>
   </div>
+  <footer class="main-footer">
+  </footer>
 
- <script type="text/javascript" src="js/app.js"></script>
-</body>
+  <script type="text/javascript" src="js/app.js"></script>
+  </body>
 </html>

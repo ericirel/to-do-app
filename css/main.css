@@ -23,7 +23,8 @@ body {
 }
 
 #icon i {
- float: right;
+  float: right;
+  margin-right: 50px;
 }
 
 #slash-slash {
@@ -148,4 +149,12 @@ ul li.editMode label {
   padding-top: 60px;
   padding-bottom: 60px;
   border-bottom: 20px solid #00B16A;
+  bottom: 0;
+}
+
+.line {
+  border-bottom: 1px solid #000;
+  padding-bottom: 80px;
+  width: 80%;
+  margin: 0 auto;
 }
